@@ -1,8 +1,11 @@
 '================================
 ' PROGRAM: CVALID
 ' PURPOSE: Shared validation dispatcher
-' MODE: 1=DIV0 2=RADIUS 3=BLANK 4=TRIANGLE
-'       5=POSITIVE 6=QUAD_A 7=DISCRIM 8=FINANCE 9=PYTH
+' MODE: 1=DIV0(DEN) 2=RADIUS(POSVAL)
+'       3=BLANK(IN_STR) 4=TRIANGLE(TA,TB,TC)
+'       5=POSITIVE(POSVAL) 6=QUAD_A(QA)
+'       7=DISCRIM(D) 8=FINANCE(P,N,T)
+'       9=PYTH(TA,TB)
 '================================
 
 1→VALID
@@ -16,7 +19,7 @@ If VALMODE=1 Then
 IfEnd
 
 If VALMODE=2 Then
- If RAD<=0 Then
+ If POSVAL<=0 Then
   0→VALID
   "INVALID RADIUS"→ERRMSG
  IfEnd

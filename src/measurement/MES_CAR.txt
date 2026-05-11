@@ -7,6 +7,7 @@
 Prog "CFORMAT"
 
 Input "Radius?",RAD
+RAD→POSVAL
 2→VALMODE
 Prog "CVALID"
 If VALID=0 Then
