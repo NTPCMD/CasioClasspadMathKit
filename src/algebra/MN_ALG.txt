@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_ALG
+' PURPOSE: Algebra menu
+'================================
+
+Lbl 1
+Menu "ALGEBRA",
+"QUADRATIC",A,
+"BACK",Z
+
+Lbl A
+Prog "ALG_QUAD"
+Goto 1
+
+Lbl Z
+Return

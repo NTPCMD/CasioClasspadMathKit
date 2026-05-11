@@ -1,0 +1,25 @@
+'================================
+' PROGRAM: LIN_MID
+' PURPOSE: Midpoint between two points
+'================================
+
+"LINEAR MID"→TITLE
+Prog "CORE_FORMAT"
+
+Input "X1?",X1
+Input "Y1?",Y1
+Input "X2?",X2
+Input "Y2?",Y2
+
+(X1+X2)/2→MX
+(Y1+Y2)/2→MY
+
+Locate 1,6,"MIDPOINT="
+Locate 1,7,"("
+Locate 2,7,MX
+Locate 8,7,","
+Locate 9,7,MY
+Locate 15,7,")"
+
+Pause
+Return

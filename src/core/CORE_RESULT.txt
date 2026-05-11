@@ -1,0 +1,36 @@
+'================================
+' PROGRAM: CORE_RESULT
+' PURPOSE: Shared result rendering
+' MODE: 0=EXACT 1=DECIMAL 2=SCI 3=PI
+'================================
+
+Prog "CORE_CONST"
+
+Locate 1,6,RESLBL
+
+If RESULT_MODE=0 Then
+ Locate 1,7,RESVAL
+ Return
+IfEnd
+
+If RESULT_MODE=1 Then
+ Round(RESVAL,DISP_PREC)→RESOUT
+ Locate 1,7,RESOUT
+ Return
+IfEnd
+
+If RESULT_MODE=2 Then
+ Locate 1,7,RESVAL
+ Locate 1,8,"SCI MODE"
+ Return
+IfEnd
+
+If RESULT_MODE=3 Then
+ RESVAL/PI_CONST→RESPI
+ Locate 1,7,RESPI
+ Locate 11,7,"π"
+ Return
+IfEnd
+
+Locate 1,7,RESVAL
+Return

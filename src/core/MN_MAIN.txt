@@ -1,0 +1,57 @@
+'================================
+' PROGRAM: MN_MAIN
+' PURPOSE: Master module navigation
+'================================
+
+Lbl 1
+Menu "MATHKIT",
+"ALGEBRA",A,
+"LINEAR",B,
+"GEOMETRY",C,
+"MEASURE",D,
+"TRIG",E,
+"STATS",F,
+"FINANCE",G,
+"UTILITY",H,
+"SETTINGS",I,
+"EXIT",Z
+
+Lbl A
+Prog "MN_ALG"
+Goto 1
+
+Lbl B
+Prog "LIN_GRAD"
+Goto 1
+
+Lbl C
+Prog "TRI_PYTH"
+Goto 1
+
+Lbl D
+Prog "MN_MES"
+Goto 1
+
+Lbl E
+Prog "MN_TRI"
+Goto 1
+
+Lbl F
+Prog "STA_MEAN"
+Goto 1
+
+Lbl G
+Prog "FIN_COMP"
+Goto 1
+
+Lbl H
+Prog "CORE_NAV"
+Goto 1
+
+Lbl I
+Prog "CORE_CONST"
+Pause
+Goto 1
+
+Lbl Z
+Return

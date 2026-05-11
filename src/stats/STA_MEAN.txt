@@ -1,0 +1,19 @@
+'================================
+' PROGRAM: STA_MEAN
+' PURPOSE: Mean of three values
+'================================
+
+"STA MEAN"→TITLE
+Prog "CORE_FORMAT"
+
+Input "A?",S1
+Input "B?",S2
+Input "C?",S3
+
+(S1+S2+S3)/3→RESVAL
+"MEAN="→RESLBL
+1→RESULT_MODE
+Prog "CORE_RESULT"
+
+Pause
+Return

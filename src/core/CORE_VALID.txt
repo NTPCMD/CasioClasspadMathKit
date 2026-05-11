@@ -1,0 +1,46 @@
+'================================
+' PROGRAM: CORE_VALID
+' PURPOSE: Shared validation dispatcher
+' MODE: 1=DIV0 2=RADIUS 3=BLANK 4=TRIANGLE
+'================================
+
+1→VALID
+""→ERRMSG
+
+If VALMODE=1 Then
+ If DEN=0 Then
+ 0→VALID
+ "DIVIDE BY ZERO"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=2 Then
+ If RAD<=0 Then
+  0→VALID
+  "INVALID RADIUS"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=3 Then
+ If IN_STR="" Then
+  0→VALID
+  "INPUT REQUIRED"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=4 Then
+ If TA<=0 Or TB<=0 Or TC<=0 Then
+  0→VALID
+  "INVALID TRIANGLE"→ERRMSG
+ IfEnd
+ If TA+TB<=TC Or TA+TC<=TB Or TB+TC<=TA Then
+  0→VALID
+  "INVALID TRIANGLE"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALID=0 Then
+ Prog "CORE_ERROR"
+IfEnd
+
+Return

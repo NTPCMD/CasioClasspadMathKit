@@ -3,20 +3,20 @@
 ' PURPOSE: Circle Area
 '================================
 
-ClrText
-
-Locate 1,1,"CIRCLE AREA"
+"CIRCLE AREA"→TITLE
+Prog "CORE_FORMAT"
 
 Input "Radius?",RAD
-
-If RAD<=0 Then
- Locate 1,4,"INVALID RADIUS"
- Stop
+2→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
+ Return
 IfEnd
 
-π*RAD^2→AREA
-
-Locate 1,6,"AREA="
-Locate 1,7,AREA
+π*RAD^2→RESVAL
+"AREA="→RESLBL
+1→RESULT_MODE
+Prog "CORE_RESULT"
 
 Pause
+Return

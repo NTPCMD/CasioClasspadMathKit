@@ -4,9 +4,11 @@
 ' NOTE: Caller must set ERRMSG before Prog "CORE_ERROR"
 '================================
 
-If ERRMSG≠"" Then
+If ERRMSG<>"" Then
  Locate 1,7,ERRMSG
  Pause
  ""→ERRMSG
  Return
 IfEnd
+
+Return

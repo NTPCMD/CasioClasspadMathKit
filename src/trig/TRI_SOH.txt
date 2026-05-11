@@ -1,0 +1,32 @@
+'================================
+' PROGRAM: TRI_SOH
+' PURPOSE: Sine ratio opposite/hypotenuse
+'================================
+
+"TRI SOH"→TITLE
+Prog "CORE_FORMAT"
+
+Input "Opp?",OPP
+Input "Hyp?",HYP
+
+HYP→DEN
+1→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
+ Return
+IfEnd
+
+If OPP<=0 Or OPP>HYP Then
+ 0→VALID
+ "INVALID TRIANGLE"→ERRMSG
+ Prog "CORE_ERROR"
+ Return
+IfEnd
+
+OPP/HYP→RESVAL
+"SIN="→RESLBL
+1→RESULT_MODE
+Prog "CORE_RESULT"
+
+Pause
+Return

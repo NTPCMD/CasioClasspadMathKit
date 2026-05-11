@@ -77,3 +77,14 @@ Goto A
 ```
 
 Avoid excessive `Goto` usage.
+
+
+## ClassPad compatibility review notes
+
+The following items should be verified on real Casio ClassPad hardware/software before final export:
+
+- `Prog "NAME"` invocation syntax can vary by model/OS; confirm exact call syntax.
+- String comparison support (e.g., `If IN_STR="" Then`) should be validated for the chosen ClassPad runtime.
+- `Return` behavior from top-level programs vs subprograms may differ across models.
+- Unicode symbols such as `π` and `√` are used intentionally; verify UTF-safe transfer path during import/export.
+- Label token support (`Lbl`) should be confirmed against actual parser expectations.

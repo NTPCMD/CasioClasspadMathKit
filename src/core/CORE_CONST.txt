@@ -1,0 +1,12 @@
+'================================
+' PROGRAM: CORE_CONST
+' PURPOSE: Global constants and settings
+'================================
+
+π→PI_CONST
+2→DISP_PREC
+1→ROUND_MODE
+1→ANGLE_MODE
+"0.2.0"→VERSION
+
+Return

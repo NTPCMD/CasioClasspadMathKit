@@ -1,0 +1,25 @@
+'================================
+' PROGRAM: TRI_PYTH
+' PURPOSE: Pythagorean hypotenuse
+'================================
+
+"TRI PYTH"→TITLE
+Prog "CORE_FORMAT"
+
+Input "A?",TA
+Input "B?",TB
+
+If TA<=0 Or TB<=0 Then
+ 0→VALID
+ "INVALID TRIANGLE"→ERRMSG
+ Prog "CORE_ERROR"
+ Return
+IfEnd
+
+√(TA^2+TB^2)→RESVAL
+"HYP="→RESLBL
+1→RESULT_MODE
+Prog "CORE_RESULT"
+
+Pause
+Return

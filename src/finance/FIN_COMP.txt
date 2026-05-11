@@ -1,0 +1,27 @@
+'================================
+' PROGRAM: FIN_COMP
+' PURPOSE: Compound interest amount
+'================================
+
+"FIN COMP"→TITLE
+Prog "CORE_FORMAT"
+
+Input "P?",P
+Input "R?",R
+Input "N?",N
+Input "T?",T
+
+If P<=0 Or N<=0 Or T<0 Then
+ 0→VALID
+ "INVALID INPUT"→ERRMSG
+ Prog "CORE_ERROR"
+ Return
+IfEnd
+
+P*(1+R/N)^(N*T)→RESVAL
+"AMOUNT="→RESLBL
+1→RESULT_MODE
+Prog "CORE_RESULT"
+
+Pause
+Return
