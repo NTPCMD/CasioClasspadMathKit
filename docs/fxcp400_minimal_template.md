@@ -1,54 +1,25 @@
-# Minimal FX-CP400 Runnable Template Set
+# FX-CP400 Canonical Minimal Reference Programs
 
-This is a conservative minimal structure intended for ClassPad II FX-CP400 import testing.
+These are the canonical minimal syntax references for deployment preparation.
+They intentionally use only commands currently classified as confirmed or explicitly tracked in the command support matrix.
 
-## 1) `MN_DEMO`
+## Source files
 
-```text
-Lbl 1
-Menu "DEMO",
-"HELLO",A,
-"CALC",B,
-"EXIT",Z
+- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFHELLO.txt`
+- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFMENU.txt`
+- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFINPUT.txt`
+- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFRES.txt`
+- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFVALID.txt`
 
-Lbl A
-Prog "DM_HELLO"
-Goto 1
+## Purpose map
 
-Lbl B
-Prog "DM_CALC"
-Goto 1
+- `RFHELLO` = minimal `ClrText` + `Locate` + `Pause` + `Return`
+- `RFMENU` = minimal `Menu` + `Lbl` + `Goto` + `Prog` + `Return`
+- `RFINPUT` = minimal `Input` + `Locate` echo flow
+- `RFRES` = minimal assignment + calculation + result display
+- `RFVALID` = minimal input validation branch with clear success/failure output
 
-Lbl Z
-Return
-```
+## Deployment note
 
-## 2) `DM_HELLO`
-
-```text
-ClrText
-Locate 1,1,"HELLO WORLD"
-Pause
-Return
-```
-
-## 3) `DM_CALC`
-
-```text
-ClrText
-Input "X?",X
-X^2→Y
-Locate 1,2,"Y="
-Locate 3,2,Y
-Pause
-Return
-```
-
-## Verification procedure
-
-1. Paste these into ClassPad Manager program editor.
-2. Run each program in emulator.
-3. Confirm menu navigation, input, output, and return behavior.
-4. Export/import on hardware and re-run.
-
-> In this repository environment we cannot execute ClassPad firmware directly, so final run confirmation must be done in emulator/device QA.
+These reference programs are prepared for emulator/hardware validation, but this repository environment still cannot execute FX-CP400 firmware directly.
+Use the runtime test suite before marking them hardware-approved.

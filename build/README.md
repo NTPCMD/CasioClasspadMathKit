@@ -1,3 +1,3 @@
 # build/
 
-Staging area for generated/intermediate manager-export artifacts prior to release packaging.
+Staging area for generated manifests, validated source copies, and manager-import preparation files.

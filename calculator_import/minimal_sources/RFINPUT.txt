@@ -1,0 +1,6 @@
+ClrText
+Input "X?",X
+Locate 1,2,"X="
+Locate 3,2,X
+Pause
+Return

@@ -1,0 +1,7 @@
+ClrText
+2→A
+A^2→B
+Locate 1,1,"A^2="
+Locate 5,1,B
+Pause
+Return

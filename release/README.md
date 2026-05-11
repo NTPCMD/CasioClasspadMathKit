@@ -1,3 +1,3 @@
 # release/
 
-Versioned release bundles for distributable FX-CP400 import packages.
+Versioned release bundles for distributable FX-CP400 export packages and release notes.

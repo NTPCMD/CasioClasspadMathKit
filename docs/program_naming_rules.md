@@ -1,11 +1,15 @@
 # Program Naming Rules
 
-Use short ClassPad-compatible names with the following prefixes:
+Use short ClassPad-compatible names with the following prefixes and limits:
 
-| Type | Prefix |
+- Program name length: **8 characters maximum**
+- Shared interface identifiers: **8 characters maximum**
+
+| Type | Prefix / Pattern |
 |---|---|
 | Menu | `MN_` |
-| Core | `CORE_` |
+| Shared core helper | `C...` short names such as `CFORMAT`, `CVALID` |
+| Core navigation | `CORE_` only when the full name still fits the 8-char limit (for example `CORE_NAV`) |
 | Algebra | `ALG_` |
 | Linear | `LIN_` |
 | Geometry | `GEO_` |
@@ -15,17 +19,16 @@ Use short ClassPad-compatible names with the following prefixes:
 | Finance | `FIN_` |
 | Graph | `GRH_` |
 | Utility | `UTL_` |
+| Reference / test | `RF...` or other <=8-char verified names |
 
 ## Examples
 
 - `ALG_QUAD`
-- `ALG_SIMUL`
 - `LIN_GRAD`
-- `GEO_PYTH`
 - `MES_CAR`
-- `MES_COMPA`
 - `TRI_SOH`
 - `STA_MEAN`
 - `FIN_COMP`
-- `GRH_LINE`
-- `CINPUT`
+- `CFORMAT`
+- `CVALID`
+- `RFMENU`

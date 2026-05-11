@@ -1,3 +1,3 @@
 # calculator_import/
 
-Final validated artifacts ready to transfer into FX-CP400 (after manager export + QA).
+Holds the latest transfer-ready FX-CP400 artifacts plus canonical minimal reference source files used for emulator and hardware smoke testing.
