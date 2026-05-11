@@ -5,6 +5,11 @@
 '================================
 
 Prog "CORE_CONST"
+
+If TITLE=0 Then
+ ""→TITLE
+IfEnd
+
 ClrText
 Locate 1,1,"================"
 
