@@ -8,6 +8,8 @@
 | Else | `Else` |
 | Loop | `While` |
 | For | `For 1→I To 10` |
+
+Project standard uses the arrow-assignment `For 1→I To 10` form shown below.
 | Input | `Input "?",A` |
 | Output | `Locate 1,1,"TEXT"` |
 | Menu | `Menu "TITLE"` |

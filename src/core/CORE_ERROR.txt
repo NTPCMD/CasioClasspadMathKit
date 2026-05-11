@@ -1,11 +1,11 @@
 '================================
 ' PROGRAM: CORE_ERROR
 ' PURPOSE: Common error handling
-' NOTE: Caller must set ERR_MSG before Prog "CORE_ERROR"
+' NOTE: Caller must set ERRMSG before Prog "CORE_ERROR"
 '================================
 
-If ERR_MSG≠"" Then
- Locate 1,7,ERR_MSG
+If ERRMSG≠"" Then
+ Locate 1,7,ERRMSG
  Pause
  Return
 IfEnd

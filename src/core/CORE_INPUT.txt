@@ -4,4 +4,4 @@
 ' NOTE: Caller performs domain-specific validation
 '================================
 
-Input "Value?",VAL
+Input "Value?",COREVAL
