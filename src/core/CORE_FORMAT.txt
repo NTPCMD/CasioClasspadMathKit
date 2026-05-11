@@ -1,0 +1,7 @@
+'================================
+' PROGRAM: CORE_FORMAT
+' PURPOSE: Shared output formatting
+'================================
+
+ClrText
+Locate 1,1,"MATHKIT"

@@ -1,0 +1,22 @@
+'================================
+' PROGRAM: MES_CAREA
+' PURPOSE: Circle Area
+'================================
+
+ClrText
+
+Locate 1,1,"CIRCLE AREA"
+
+Input "Radius?",R
+
+If R<=0 Then
+ Locate 1,4,"INVALID RADIUS"
+ Stop
+IfEnd
+
+A:=π*R^2
+
+Locate 1,6,"AREA="
+Locate 1,7,A
+
+Pause

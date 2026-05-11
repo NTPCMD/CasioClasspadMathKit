@@ -1,0 +1,6 @@
+'================================
+' PROGRAM: CORE_NAV
+' PURPOSE: Shared menu navigation
+'================================
+
+Locate 1,1,"SELECT OPTION"

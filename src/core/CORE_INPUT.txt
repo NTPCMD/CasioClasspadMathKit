@@ -1,0 +1,6 @@
+'================================
+' PROGRAM: CORE_INPUT
+' PURPOSE: Shared input routines
+'================================
+
+Input "?",A

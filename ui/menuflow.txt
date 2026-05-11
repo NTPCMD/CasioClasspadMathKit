@@ -1,0 +1,16 @@
+MAIN MENU
+ ├── Algebra
+ │    ├── Quadratics
+ │    ├── Simultaneous
+ │    └── Surds
+ │
+ ├── Measurement
+ │    ├── Circle
+ │    ├── Area
+ │    ├── Composite
+ │    └── Volume
+ │
+ └── Trig
+      ├── SOH
+      ├── Sine Rule
+      └── Cosine Rule
