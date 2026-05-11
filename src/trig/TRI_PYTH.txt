@@ -9,10 +9,9 @@ Prog "CORE_FORMAT"
 Input "A?",TA
 Input "B?",TB
 
-If TA<=0 Or TB<=0 Then
- 0→VALID
- "INVALID TRIANGLE"→ERRMSG
- Prog "CORE_ERROR"
+9→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
  Return
 IfEnd
 

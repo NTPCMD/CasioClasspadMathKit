@@ -11,10 +11,9 @@ Input "R?",R
 Input "N?",N
 Input "T?",T
 
-If P<=0 Or N<=0 Or T<0 Then
- 0→VALID
- "INVALID INPUT"→ERRMSG
- Prog "CORE_ERROR"
+8→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
  Return
 IfEnd
 

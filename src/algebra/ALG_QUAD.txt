@@ -10,18 +10,16 @@ Input "A?",QA
 Input "B?",QB
 Input "C?",QC
 
-If QA=0 Then
- 0→VALID
- "A CANNOT BE 0"→ERRMSG
- Prog "CORE_ERROR"
+6→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
  Return
 IfEnd
 
 QB^2-4*QA*QC→D
-If D<0 Then
- 0→VALID
- "NO REAL ROOTS"→ERRMSG
- Prog "CORE_ERROR"
+7→VALMODE
+Prog "CORE_VALID"
+If VALID=0 Then
  Return
 IfEnd
 
