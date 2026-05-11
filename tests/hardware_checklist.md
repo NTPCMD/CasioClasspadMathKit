@@ -3,7 +3,7 @@
 ## Before import
 
 - [ ] Commit all source changes to Git.
-- [ ] Copy current validated `.xcp` exports into `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/backups/` with date/version suffix.
+- [ ] Copy current validated `.xcp` exports into `backups/` with date/version suffix.
 - [ ] Confirm every program name is 8 chars or fewer.
 - [ ] Confirm every `Prog` target exists.
 - [ ] Run parser tests in ClassPad Manager editor.
@@ -12,8 +12,8 @@
 ## Import package preparation
 
 - [ ] Export fresh `.xcp` package from ClassPad Manager.
-- [ ] Copy the exported package into `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/release/`.
-- [ ] Copy the exact transfer-ready artifact into `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/`.
+- [ ] Copy the exported package into `release/`.
+- [ ] Copy the exact transfer-ready artifact into `calculator_import/`.
 - [ ] Keep previous known-good export unchanged for rollback.
 
 ## Hardware import

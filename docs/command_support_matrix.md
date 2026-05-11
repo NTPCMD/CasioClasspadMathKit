@@ -21,7 +21,7 @@ Status meanings:
 
 ## Canonical references
 
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFMENU.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFINPUT.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFRES.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFVALID.txt`
+- `calculator_import/minimal_sources/RFMENU.txt`
+- `calculator_import/minimal_sources/RFINPUT.txt`
+- `calculator_import/minimal_sources/RFRES.txt`
+- `calculator_import/minimal_sources/RFVALID.txt`

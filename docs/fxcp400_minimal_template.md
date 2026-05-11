@@ -5,11 +5,11 @@ They intentionally use only commands currently classified as confirmed or explic
 
 ## Source files
 
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFHELLO.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFMENU.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFINPUT.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFRES.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFVALID.txt`
+- `calculator_import/minimal_sources/RFHELLO.txt`
+- `calculator_import/minimal_sources/RFMENU.txt`
+- `calculator_import/minimal_sources/RFINPUT.txt`
+- `calculator_import/minimal_sources/RFRES.txt`
+- `calculator_import/minimal_sources/RFVALID.txt`
 
 ## Purpose map
 

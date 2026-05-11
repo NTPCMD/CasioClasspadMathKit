@@ -8,8 +8,8 @@
 
 ## Canonical source inputs
 
-- Production source: `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/src/**/*.txt`
-- Minimal hardware references: `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/*.txt`
+- Production source: `src/**/*.txt`
+- Minimal hardware references: `calculator_import/minimal_sources/*.txt`
 
 ## Exact working workflow
 
@@ -37,9 +37,9 @@
 
 1. Save the Manager project.
 2. Export the validated program set to the ClassPad transfer package format used by Manager.
-3. Store the export in `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/release/`.
-4. Copy the transfer-ready artifact into `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/`.
-5. Copy the previous good package into `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/backups/`.
+3. Store the export in `release/`.
+4. Copy the transfer-ready artifact into `calculator_import/`.
+5. Copy the previous good package into `backups/`.
 
 ### D. Calculator import
 
@@ -48,7 +48,7 @@
 3. Copy the validated export package using the ClassPad transfer workflow.
 4. Safely eject the device.
 5. Open/import the package on the calculator.
-6. Run the smoke tests from `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/tests/hardware_checklist.md`.
+6. Run the smoke tests from `tests/hardware_checklist.md`.
 
 ## Supported formats
 

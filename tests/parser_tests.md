@@ -6,11 +6,11 @@ These checks validate that repository source stays inside the conservative FX-CP
 
 Use these files as parser baselines:
 
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFHELLO.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFMENU.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFINPUT.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFRES.txt`
-- `/home/runner/work/CasioClasspadMathKit/CasioClasspadMathKit/calculator_import/minimal_sources/RFVALID.txt`
+- `calculator_import/minimal_sources/RFHELLO.txt`
+- `calculator_import/minimal_sources/RFMENU.txt`
+- `calculator_import/minimal_sources/RFINPUT.txt`
+- `calculator_import/minimal_sources/RFRES.txt`
+- `calculator_import/minimal_sources/RFVALID.txt`
 
 ## Parser checks
 

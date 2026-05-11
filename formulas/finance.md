@@ -21,8 +21,8 @@ OUTPUTS:
 
 VALIDATION:
 - P > 0
-- n > 0
-- t > 0
+- N > 0
+- T > 0
 
 EXAMPLE:
 - P = 1000, R = 0.05, N = 12, T = 2
