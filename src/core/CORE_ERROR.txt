@@ -3,10 +3,9 @@
 ' PURPOSE: Common error handling
 '================================
 
-Input "Divisor?",D
-
-If D=0 Then
- Locate 1,7,"DIVIDE BY ZERO"
+' Set ERR_MSG before calling this routine.
+If ERR_MSG≠"" Then
+ Locate 1,7,ERR_MSG
  Pause
  Return
 IfEnd

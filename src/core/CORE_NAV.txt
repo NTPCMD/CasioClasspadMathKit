@@ -3,4 +3,18 @@
 ' PURPOSE: Shared menu navigation
 '================================
 
-Locate 1,1,"SELECT OPTION"
+Menu "MATHKIT",
+"ALGEBRA",A,
+"TRIG",B,
+"BACK",Z
+
+Lbl A
+Prog "MN_ALG"
+Return
+
+Lbl B
+Prog "MN_TRI"
+Return
+
+Lbl Z
+Return
