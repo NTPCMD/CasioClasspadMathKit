@@ -11,6 +11,6 @@ MAIN MENU
  │    └── Volume
  │
  └── Trig
-      ├── SOH
+      ├── Sine Ratio (SOH)
       ├── Sine Rule
       └── Cosine Rule

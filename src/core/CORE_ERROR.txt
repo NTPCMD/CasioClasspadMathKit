@@ -1,9 +1,9 @@
 '================================
 ' PROGRAM: CORE_ERROR
 ' PURPOSE: Common error handling
+' NOTE: Caller must set ERR_MSG before Prog "CORE_ERROR"
 '================================
 
-' Set ERR_MSG before calling this routine.
 If ERR_MSG≠"" Then
  Locate 1,7,ERR_MSG
  Pause
