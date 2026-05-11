@@ -76,7 +76,7 @@ Lbl A
 Goto A
 ```
 
-Avoid excessive `Goto` usage.
+Use `Goto` mainly for menu-loop control; avoid it in calculation logic where structured flow is clearer.
 
 
 ## ClassPad compatibility review notes

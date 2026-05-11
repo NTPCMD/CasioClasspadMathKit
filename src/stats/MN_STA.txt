@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_STA
+' PURPOSE: Statistics module menu
+'================================
+
+Lbl 1
+Menu "STATS",
+"MEAN",A,
+"BACK",Z
+
+Lbl A
+Prog "STA_MEAN"
+Goto 1
+
+Lbl Z
+Return

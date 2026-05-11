@@ -14,12 +14,15 @@ Input "Y2?",Y2
 (X1+X2)/2→MX
 (Y1+Y2)/2→MY
 
-Locate 1,6,"MIDPOINT="
-Locate 1,7,"("
-Locate 2,7,MX
-Locate 8,7,","
-Locate 9,7,MY
-Locate 15,7,")"
+"MID X="→RESLBL
+MX→RESVAL
+1→RESULT_MODE
+Prog "CORE_RESULT"
+
+"MID Y="→RESLBL
+MY→RESVAL
+1→RESULT_MODE
+Prog "CORE_RESULT"
 
 Pause
 Return

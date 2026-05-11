@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_UTL
+' PURPOSE: Utility module menu
+'================================
+
+Lbl 1
+Menu "UTILITY",
+"NAV HELP",A,
+"BACK",Z
+
+Lbl A
+Prog "CORE_NAV"
+Goto 1
+
+Lbl Z
+Return

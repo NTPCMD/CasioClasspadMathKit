@@ -1,0 +1,22 @@
+'================================
+' PROGRAM: MN_SET
+' PURPOSE: Settings module menu
+'================================
+
+Lbl 1
+Menu "SETTINGS",
+"VIEW CONST",A,
+"BACK",Z
+
+Lbl A
+"SETTINGS"→TITLE
+Prog "CORE_FORMAT"
+Locate 1,5,"PREC="
+Locate 7,5,DISP_PREC
+Locate 1,6,"ANGLE="
+Locate 7,6,ANGLE_MODE
+Pause
+Goto 1
+
+Lbl Z
+Return
