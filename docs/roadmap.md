@@ -25,7 +25,7 @@
 - Verify validation failures route through ERRMSG/VALID behavior
 - Verify decimal/exact formatting output paths
 
-## Optimisation goals
+## Optimization goals
 - Reduce repeated Locate blocks with shared format/result handlers
 - Minimize Goto usage while preserving menu loop reliability
 - Reuse constants and mode flags from CCONST only

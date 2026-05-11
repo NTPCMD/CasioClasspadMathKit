@@ -1,4 +1,4 @@
-# FX-CP400 Performance Optimisation Review
+# FX-CP400 Performance Optimization Review
 
 ## Current observations
 
@@ -25,7 +25,7 @@
 
 ## Priority recommendations
 
-1. Preserve parser stability over micro-optimisation.
+1. Preserve parser stability over micro-optimization.
 2. Prefer fewer `Prog` hops only when they do not reduce modular clarity.
 3. Avoid unnecessary Pause/refresh cycles in chained workflows.
 4. Keep high-frequency exam paths shallow and predictable.
