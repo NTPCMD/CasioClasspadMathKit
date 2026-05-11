@@ -9,7 +9,7 @@ Menu "GEOMETRY",
 "BACK",Z
 
 Lbl A
-Prog "GEO_PYTH"
+Prog "TRI_PYTH"
 Goto 1
 
 Lbl Z

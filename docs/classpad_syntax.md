@@ -11,7 +11,7 @@
 | If | `If X>0 Then` |
 | Else | `Else` |
 | Loop | `While` |
-| For | `For 1→I To 10` |
+| For | `For 1→I To 10` ... `Next` |
 
 | Input | `Input "?",A` |
 | Output | `Locate 1,1,"TEXT"` |

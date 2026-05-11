@@ -9,7 +9,6 @@ Menu "SETTINGS",
 "BACK",Z
 
 Lbl A
-Prog "CORE_CONST"
 "SETTINGS"→TITLE
 Prog "CORE_FORMAT"
 Locate 1,5,"PREC="

@@ -1,7 +1,9 @@
 '================================
 ' PROGRAM: CORE_INPUT
-' PURPOSE: Shared input routines
+' PURPOSE: Shared input routine
+' USAGE: Set IN_PROMPT, run CORE_INPUT, read COREVAL
 ' NOTE: Caller performs domain-specific validation
 '================================
 
-Input "Value?",COREVAL
+Input IN_PROMPT,COREVAL
+Return

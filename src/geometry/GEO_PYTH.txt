@@ -1,7 +1,0 @@
-'================================
-' PROGRAM: GEO_PYTH
-' PURPOSE: Geometry wrapper for Pythagorean solver
-'================================
-
-Prog "TRI_PYTH"
-Return
