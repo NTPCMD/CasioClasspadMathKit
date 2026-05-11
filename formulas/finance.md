@@ -4,17 +4,17 @@ NAME:
 Compound Amount
 
 FORMULA:
-A = P(1 + r/n)^(nt)
+A = P(1 + R/N)^(NT)
 
 VARIABLES:
 - P: Principal
-- r: Annual rate as decimal (e.g., 0.05 for 5%)
-- n: Compounds per year
-- t: Time in years
+- R: Annual rate as decimal (e.g., 0.05 for 5%)
+- N: Compounds per year
+- T: Time in years
 - A: Amount
 
 INPUTS:
-- P, r, n, t
+- P, R, N, T
 
 OUTPUTS:
 - A
@@ -25,7 +25,7 @@ VALIDATION:
 - t > 0
 
 EXAMPLE:
-- P = 1000, r = 0.05, n = 12, t = 2
+- P = 1000, R = 0.05, N = 12, T = 2
 - A ≈ 1104.94
 
 PROGRAM NAME:
