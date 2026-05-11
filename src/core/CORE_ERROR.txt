@@ -7,5 +7,6 @@
 If ERRMSG≠"" Then
  Locate 1,7,ERRMSG
  Pause
+ ""→ERRMSG
  Return
 IfEnd

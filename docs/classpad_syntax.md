@@ -1,5 +1,9 @@
 # ClassPad Syntax Reference
 
+## Project Conventions
+
+- Use arrow-assignment style in loops and assignments where shown in this guide.
+
 ## Feature Syntax Table
 
 | Feature | Syntax |
@@ -51,8 +55,6 @@ WhileEnd
 ```
 
 ### For Loops
-
-Project standard uses the arrow-assignment `For 1→I To 10` form.
 
 ```
 For 1→I To 10

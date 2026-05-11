@@ -20,7 +20,7 @@ OUTPUTS:
 
 VALIDATION:
 - hypotenuse > 0
-- 0 ≤ opposite ≤ hypotenuse
+- 0 < opposite ≤ hypotenuse
 
 EXAMPLE:
 - opposite = 3, hypotenuse = 5
