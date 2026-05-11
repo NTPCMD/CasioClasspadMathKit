@@ -8,7 +8,7 @@ A = P(1 + r/n)^(nt)
 
 VARIABLES:
 - P: Principal
-- r: Annual rate
+- r: Annual rate as decimal (e.g., 0.05 for 5%)
 - n: Compounds per year
 - t: Time in years
 - A: Amount
