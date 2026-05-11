@@ -10,7 +10,7 @@ Input "A?",TA
 Input "B?",TB
 
 9→VALMODE
-' validate TA and TB are positive (must be set before CVALID)
+' VALMODE 9: TA and TB must be set (from Input) and positive
 Prog "CVALID"
 If VALID=0 Then
  Return

@@ -22,7 +22,7 @@ OUTPUTS:
 VALIDATION:
 - P > 0
 - n > 0
-- t ≥ 0
+- t > 0
 
 EXAMPLE:
 - P = 1000, r = 0.05, n = 12, t = 2

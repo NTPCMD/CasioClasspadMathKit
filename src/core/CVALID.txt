@@ -5,7 +5,7 @@
 '       3=BLANK(IN_STR) 4=TRIANGLE(TA,TB,TC)
 '       5=POSITIVE(POSVAL) 6=QUAD_A(QA)
 '       7=DISCRIM(D) 8=FINANCE(P,N,T)
-'       9=PYTH(TA,TB)
+'       9=PYTH(TA,TB) [positive-leg check only]
 '================================
 
 1→VALID
