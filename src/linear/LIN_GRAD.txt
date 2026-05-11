@@ -4,7 +4,7 @@
 '================================
 
 "LINEAR GRAD"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "X1?",X1
 Input "Y1?",Y1
@@ -14,15 +14,15 @@ Input "Y2?",Y2
 X2-X1→DX
 DX→DEN
 1→VALMODE
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd
 
 (Y2-Y1)/DEN→RESVAL
 "GRAD="→RESLBL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return

@@ -9,7 +9,7 @@ Menu "MEASURE",
 "BACK",Z
 
 Lbl A
-Prog "MES_CAREA"
+Prog "MES_CAR"
 Goto 1
 
 Lbl Z

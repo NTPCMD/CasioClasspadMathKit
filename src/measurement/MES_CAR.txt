@@ -1,22 +1,22 @@
 '================================
-' PROGRAM: MES_CAREA
+' PROGRAM: MES_CAR
 ' PURPOSE: Circle Area
 '================================
 
 "CIRCLE AREA"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "Radius?",RAD
 2→VALMODE
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd
 
 π*RAD^2→RESVAL
 "AREA="→RESLBL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return

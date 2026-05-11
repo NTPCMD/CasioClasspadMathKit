@@ -4,7 +4,7 @@
 '================================
 
 "LINEAR MID"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "X1?",X1
 Input "Y1?",Y1
@@ -16,13 +16,13 @@ Input "Y2?",Y2
 
 "MID X="→RESLBL
 MX→RESVAL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 "MID Y="→RESLBL
 MY→RESVAL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return

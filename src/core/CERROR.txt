@@ -1,10 +1,10 @@
 '================================
-' PROGRAM: CORE_ERROR
+' PROGRAM: CERROR
 ' PURPOSE: Common error handling
-' NOTE: Caller must set ERRMSG before Prog "CORE_ERROR"
+' NOTE: Caller must set ERRMSG before Prog "CERROR"
 '================================
 
-If ERRMSG<>"" Then
+If ERRMSG≠"" Then
  Locate 1,7,ERRMSG
  Pause
  ""→ERRMSG

@@ -10,11 +10,11 @@ Menu "SETTINGS",
 
 Lbl A
 "SETTINGS"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 Locate 1,5,"PREC="
-Locate 7,5,DISP_PREC
+Locate 7,5,DPREC
 Locate 1,6,"ANGLE="
-Locate 7,6,ANGLE_MODE
+Locate 7,6,AMODE
 Pause
 Goto 1
 

@@ -1,10 +1,10 @@
 '================================
-' PROGRAM: CORE_FORMAT
+' PROGRAM: CFORMAT
 ' PURPOSE: Shared output formatting
-' NOTE: Caller may set TITLE before Prog "CORE_FORMAT"
+' NOTE: Caller may set TITLE before Prog "CFORMAT"
 '================================
 
-Prog "CORE_CONST"
+Prog "CCONST"
 ClrText
 Locate 1,1,"================"
 

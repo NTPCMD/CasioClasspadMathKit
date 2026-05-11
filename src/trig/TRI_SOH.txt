@@ -4,14 +4,14 @@
 '================================
 
 "TRI SOH"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "Opp?",OPP
 Input "Hyp?",HYP
 
 HYP→POSVAL
 5→VALMODE
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd
@@ -19,14 +19,14 @@ IfEnd
 If OPP<=0 Or OPP>HYP Then
  0→VALID
  "INVALID TRIANGLE"→ERRMSG
- Prog "CORE_ERROR"
+ Prog "CERROR"
  Return
 IfEnd
 
 OPP/HYP→RESVAL
 "SIN="→RESLBL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return

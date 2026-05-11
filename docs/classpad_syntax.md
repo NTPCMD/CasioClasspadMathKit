@@ -1,90 +1,59 @@
-# ClassPad Syntax Reference
+# FX-CP400 ClassPad Syntax Reference (Strict Pass)
 
-## Project Conventions
+This project now targets **ClassPad II FX-CP400 parser-safe syntax** with conservative rules.
 
-- Use arrow-assignment style in loops and assignments where shown in this guide.
+## Strict compatibility profile used in this repository
 
-## Feature Syntax Table
+- Program names: **max 8 characters**
+- Variable names: keep **8 characters or fewer** for safety
+- Assignment: `→`
+- Flow blocks: `If ... Then`, `Else`, `IfEnd`, `For ... Next`, `While ... WhileEnd`
+- Menu loop pattern: `Lbl 1` + `Menu` + branch labels + `Goto 1`
+- Program calls: `Prog "NAME"`
+- Exit to caller/menu: `Return`
+- Comparators: use `=`, `≠`, `<`, `<=`, `>`, `>=`
+- Comments in source files: `'` at line start
 
-| Feature | Syntax |
-|---|---|
-| If | `If X>0 Then` |
-| Else | `Else` |
-| Loop | `While` |
-| For | `For 1→I To 10` ... `Next` |
+## Syntax verification matrix
 
-| Input | `Input "?",A` |
-| Output | `Locate 1,1,"TEXT"` |
-| Menu | `Menu "TITLE"` |
-| Stop | `Stop` |
-| Labels | `Lbl` |
-| Goto | `Goto` |
+| Feature | Repository syntax | Status |
+|---|---|---|
+| Menu | `Menu "TITLE", "ITEM",A, ...` | Compatible pattern used |
+| Locate | `Locate col,row,value` | Compatible pattern used |
+| Input | `Input "PROMPT",VAR` | Compatible pattern used |
+| Prog call | `Prog "NAME"` | Compatible pattern used |
+| Return | `Return` | Compatible pattern used |
+| Labels/Goto | `Lbl A`, `Goto 1` | Compatible pattern used |
+| String handling | `If STR="" Then`, `If STR≠"" Then` | Compatible pattern used |
+| Pause | `Pause` | Compatible pattern used |
+| ClrText | `ClrText` | Compatible pattern used |
+| Comments | `' comment` | Source-level convention |
 
-## Core Commands You Need
+## Known hardware-check items (must test on device/emulator)
 
-### Variables
-```
-5→A
-A+1→A
-```
+- Unicode token transfer (`π`, `√`) through the final import path.
+- Scientific-notation rendering behavior in the current `CRESULT` flow.
+- Exact behavior of top-level `Return` from directly launched programs.
 
-### Input
-```
-Input "Radius?",R
-```
+## Core examples
 
-### Output
-```
-Locate 1,1,"HELLO"
-```
-
-### If Statements
-```
-If A>0 Then
- Locate 1,1,"POSITIVE"
-Else
- Locate 1,1,"NEGATIVE"
-IfEnd
-```
-
-### While Loops
-```
-While A<10
- A+1→A
-WhileEnd
-```
-
-### For Loops
-
-```
-For 1→I To 10
- Locate 1,I,I
-Next
-```
-
-### Menus
-```
+```text
 Menu "MATHKIT",
 "ALGEBRA",A,
-"TRIG",B,
 "EXIT",Z
-```
 
-### Labels/Goto
-```
 Lbl A
-Goto A
+Prog "MN_ALG"
+Goto 1
+
+Lbl Z
+Return
 ```
 
-Use `Goto` mainly for menu-loop control; avoid it in calculation logic where structured flow is clearer.
-
-
-## ClassPad compatibility review notes
-
-The following items should be verified on real Casio ClassPad hardware/software before final export:
-
-- `Prog "NAME"` invocation syntax can vary by model/OS; confirm exact call syntax.
-- String comparison support (e.g., `If IN_STR="" Then`) should be validated for the chosen ClassPad runtime.
-- `Return` behavior from top-level programs vs subprograms may differ across models.
-- Unicode symbols such as `π` and `√` are used intentionally; verify UTF-safe transfer path during import/export.
-- Label token support (`Lbl`) should be confirmed against actual parser expectations.
+```text
+If ERRMSG≠"" Then
+ Locate 1,7,ERRMSG
+ Pause
+ Return
+IfEnd
+```

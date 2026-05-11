@@ -1,5 +1,5 @@
 '================================
-' PROGRAM: CORE_VALID
+' PROGRAM: CVALID
 ' PURPOSE: Shared validation dispatcher
 ' MODE: 1=DIV0 2=RADIUS 3=BLANK 4=TRIANGLE
 '       5=POSITIVE 6=QUAD_A 7=DISCRIM 8=FINANCE 9=PYTH
@@ -76,7 +76,7 @@ If VALMODE=9 Then
 IfEnd
 
 If VALID=0 Then
- Prog "CORE_ERROR"
+ Prog "CERROR"
 IfEnd
 
 Return

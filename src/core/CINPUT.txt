@@ -1,0 +1,8 @@
+'================================
+' PROGRAM: CINPUT
+' PURPOSE: Shared input routine
+' NOTE: Uses fixed prompt for parser-safe Input syntax
+'================================
+
+Input "VALUE?",COREVAL
+Return

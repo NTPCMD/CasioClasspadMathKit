@@ -1,30 +1,41 @@
-# Standard Program Template
+# FX-CP400 Program Template (ClassPad-safe)
 
-All future programs should use this exact structure.
+All future programs should follow this exact structure.
 
 ```text
 '================================
-' PROGRAM: XXX_NAME
+' PROGRAM: AAA_BBBB
 ' PURPOSE: Describe purpose
 '================================
 
-"PROGRAM TITLE"→TITLE
-Prog "CORE_FORMAT"
+"PROGRAM"→TITLE
+Prog "CFORMAT"
 
 ' INPUT SECTION
-Input "Prompt?",VAR
+Input "VALUE?",A
 
 ' VALIDATION SECTION
-' set VALMODE or ERRMSG/VALID then call CORE_VALID/CORE_ERROR
+' set VALMODE and call shared validator
+1→VALMODE
+Prog "CVALID"
+If VALID=0 Then
+ Return
+IfEnd
 
 ' CALCULATION SECTION
-' compute RESVAL or local outputs
+A^2→RESVAL
 
 ' OUTPUT SECTION
 "RESULT="→RESLBL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return
 ```
+
+## Naming safety rules
+
+- Program name max 8 chars
+- Variable names max 8 chars
+- No spaces in program names

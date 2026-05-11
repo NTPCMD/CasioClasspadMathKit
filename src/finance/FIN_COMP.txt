@@ -4,7 +4,7 @@
 '================================
 
 "FIN COMP"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "P?",P
 Input "R?",R
@@ -13,15 +13,15 @@ Input "T?",T
 
 8→VALMODE
 ' validate P,N,T finance constraints
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd
 
 P*(1+R/N)^(N*T)→RESVAL
 "AMOUNT="→RESLBL
-1→RESULT_MODE
-Prog "CORE_RESULT"
+1→RESMODE
+Prog "CRESULT"
 
 Pause
 Return

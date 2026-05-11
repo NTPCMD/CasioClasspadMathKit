@@ -4,21 +4,21 @@
 '================================
 
 "ALG QUAD"→TITLE
-Prog "CORE_FORMAT"
+Prog "CFORMAT"
 
 Input "A?",QA
 Input "B?",QB
 Input "C?",QC
 
 6→VALMODE
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd
 
 QB^2-4*QA*QC→D
 7→VALMODE
-Prog "CORE_VALID"
+Prog "CVALID"
 If VALID=0 Then
  Return
 IfEnd

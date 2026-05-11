@@ -22,10 +22,10 @@ Use short ClassPad-compatible names with the following prefixes:
 - `ALG_SIMUL`
 - `LIN_GRAD`
 - `GEO_PYTH`
-- `MES_CAREA`
+- `MES_CAR`
 - `MES_COMPA`
 - `TRI_SOH`
 - `STA_MEAN`
 - `FIN_COMP`
 - `GRH_LINE`
-- `CORE_INPUT`
+- `CINPUT`
