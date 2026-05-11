@@ -62,7 +62,7 @@ If VALMODE=7 Then
 IfEnd
 
 If VALMODE=8 Then
- If P<=0 Or N<=0 Or T<0 Then
+ If P<=0 Or N<=0 Or T<=0 Then
   0→VALID
   "INVALID INPUT"→ERRMSG
  IfEnd

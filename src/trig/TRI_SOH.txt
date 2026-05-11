@@ -9,8 +9,8 @@ Prog "CORE_FORMAT"
 Input "Opp?",OPP
 Input "Hyp?",HYP
 
-HYP→DEN
-1→VALMODE
+HYP→POSVAL
+5→VALMODE
 Prog "CORE_VALID"
 If VALID=0 Then
  Return

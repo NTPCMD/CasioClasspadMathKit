@@ -11,7 +11,8 @@ Input "Y1?",Y1
 Input "X2?",X2
 Input "Y2?",Y2
 
-X2-X1→DEN
+X2-X1→DX
+DX→DEN
 1→VALMODE
 Prog "CORE_VALID"
 If VALID=0 Then

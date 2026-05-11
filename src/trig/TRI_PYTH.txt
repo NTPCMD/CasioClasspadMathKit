@@ -10,6 +10,7 @@ Input "A?",TA
 Input "B?",TB
 
 9→VALMODE
+' validate TA and TB are positive
 Prog "CORE_VALID"
 If VALID=0 Then
  Return

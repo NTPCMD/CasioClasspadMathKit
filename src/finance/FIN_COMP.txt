@@ -12,6 +12,7 @@ Input "N?",N
 Input "T?",T
 
 8→VALMODE
+' validate P,N,T finance constraints
 Prog "CORE_VALID"
 If VALID=0 Then
  Return
