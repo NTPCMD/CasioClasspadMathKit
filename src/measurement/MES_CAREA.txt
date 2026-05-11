@@ -14,7 +14,7 @@ If RAD<=0 Then
  Stop
 IfEnd
 
-AREA:=π*RAD^2
+π*RAD^2→AREA
 
 Locate 1,6,"AREA="
 Locate 1,7,AREA
