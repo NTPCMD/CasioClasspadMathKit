@@ -12,7 +12,7 @@
 | Output | `Locate 1,1,"TEXT"` |
 | Menu | `Menu "TITLE"` |
 | Stop | `Stop` |
-| Labels | `Label` |
+| Labels | `Lbl` |
 | Goto | `Goto` |
 
 ## Core Commands You Need

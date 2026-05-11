@@ -1,4 +1,4 @@
-# SOH Rule
+# Sine Ratio (SOH)
 
 NAME:
 Sine from Opposite and Hypotenuse

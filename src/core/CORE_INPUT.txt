@@ -4,9 +4,9 @@
 '================================
 
 ' Example numeric input with validation.
-Input "Value?",V
+Input "Value?",VAL
 
-If V<=0 Then
+If VAL<=0 Then
  ERR_MSG:="INVALID INPUT"
  Prog "CORE_ERROR"
 IfEnd
