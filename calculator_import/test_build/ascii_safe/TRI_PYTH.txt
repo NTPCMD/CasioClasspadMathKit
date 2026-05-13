@@ -1,0 +1,28 @@
+'================================
+' PROGRAM: TRI_PYTH (ASCII-SAFE VERSION)
+' PURPOSE: Pythagorean hypotenuse
+' NOTE: Uses ASCII-safe math syntax
+'================================
+
+"TRI PYTH"→TITLE
+Prog "CFORMAT"
+
+Input "A?",TA
+Input "B?",TB
+
+9→VALMODE
+' VALMODE 9: TA and TB must be set (from Input) and positive
+Prog "CVALID"
+If VALID=0 Then
+ Return
+IfEnd
+
+' Compute: RESVAL = sqrt(TA^2 + TB^2)
+' For ASCII: Store the formula in RESVAL
+(TA^2+TB^2)^(0.5)→RESVAL
+"HYP="→RESLBL
+1→RESMODE
+Prog "CRESULT"
+
+Pause
+Return

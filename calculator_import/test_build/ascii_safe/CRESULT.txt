@@ -1,0 +1,36 @@
+'================================
+' PROGRAM: CRESULT (ASCII-SAFE VERSION)
+' PURPOSE: Shared result rendering
+' MODE: 0=EXACT 1=DECIMAL 2=SCI 3=PI
+' NOTE: No Unicode symbols
+'================================
+
+Prog "CCONST"
+
+Locate 1,6,RESLBL
+
+If RESMODE=0 Then
+ Locate 1,7,RESVAL
+ Return
+IfEnd
+
+If RESMODE=1 Then
+ Locate 1,7,RESVAL
+ Return
+IfEnd
+
+If RESMODE=2 Then
+ Locate 1,7,RESVAL
+ Locate 1,8,"SCI MODE"
+ Return
+IfEnd
+
+If RESMODE=3 Then
+ RESVAL/PI_CONST→RESPI
+ Locate 1,7,RESPI
+ Locate 11,7,"*PI"
+ Return
+IfEnd
+
+Locate 1,7,RESVAL
+Return

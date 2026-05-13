@@ -1,0 +1,17 @@
+'================================
+' PROGRAM: MN_LIN
+' PURPOSE: Linear module menu
+' TEST BUILD: Simplified for import
+'================================
+
+Lbl 1
+Menu "LINEAR",
+"GRADIENT",A,
+"BACK",Z
+
+Lbl A
+Prog "LIN_GRAD"
+Goto 1
+
+Lbl Z
+Return

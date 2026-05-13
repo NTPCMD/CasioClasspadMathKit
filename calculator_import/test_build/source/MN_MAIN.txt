@@ -1,0 +1,22 @@
+'================================
+' PROGRAM: MN_MAIN
+' PURPOSE: Master module navigation
+' TEST BUILD: Simplified for import verification
+'================================
+
+Lbl 1
+Menu "MATHKIT",
+"LINEAR",B,
+"TRIG",E,
+"EXIT",Z
+
+Lbl B
+Prog "MN_LIN"
+Goto 1
+
+Lbl E
+Prog "MN_TRI"
+Goto 1
+
+Lbl Z
+Return

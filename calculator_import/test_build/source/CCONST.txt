@@ -1,0 +1,12 @@
+'================================
+' PROGRAM: CCONST
+' PURPOSE: Global constants and settings
+'================================
+
+3.14159265359→PI_CONST
+2→DPREC
+1→RMODE
+1→AMODE
+"0.2.0"→VERSION
+
+Return

@@ -1,0 +1,85 @@
+'================================
+' PROGRAM: CVALID
+' PURPOSE: Shared validation dispatcher
+' MODE: 1=DIV0(DEN) 2=RADIUS(POSVAL)
+'       3=BLANK(IN_STR) 4=TRIANGLE(TA,TB,TC)
+'       5=POSITIVE(POSVAL) 6=QUAD_A(QA)
+'       7=DISCRIM(D) 8=FINANCE(P,N,T)
+'       9=PYTH(TA,TB) [positive-leg check only]
+'================================
+
+1→VALID
+""→ERRMSG
+
+If VALMODE=1 Then
+ If DEN=0 Then
+  0→VALID
+  "DIVIDE BY ZERO"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=2 Then
+ If POSVAL<=0 Then
+  0→VALID
+  "INVALID RADIUS"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=3 Then
+ If IN_STR="" Then
+  0→VALID
+  "INPUT REQUIRED"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=4 Then
+ If TA<=0 Or TB<=0 Or TC<=0 Then
+  0→VALID
+  "INVALID TRIANGLE"→ERRMSG
+ IfEnd
+ If TA+TB<=TC Or TA+TC<=TB Or TB+TC<=TA Then
+  0→VALID
+  "INVALID TRIANGLE"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=5 Then
+ If POSVAL<=0 Then
+  0→VALID
+  "INVALID INPUT"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=6 Then
+ If QA=0 Then
+  0→VALID
+  "A CANNOT BE 0"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=7 Then
+ If D<0 Then
+  0→VALID
+  "NO REAL ROOTS"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=8 Then
+ If P<=0 Or N<=0 Or T<=0 Then
+  0→VALID
+  "INVALID INPUT"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALMODE=9 Then
+ If TA<=0 Or TB<=0 Then
+  0→VALID
+  "INVALID TRIANGLE"→ERRMSG
+ IfEnd
+IfEnd
+
+If VALID=0 Then
+ Prog "CERROR"
+IfEnd
+
+Return
