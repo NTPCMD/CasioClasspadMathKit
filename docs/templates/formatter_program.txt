@@ -1,0 +1,6 @@
+' FORMATTER TEMPLATE (FX-CP400)
+Input "X?",X
+fRound(X,3)→R
+Locate 1,1,"R="
+Locate 3,1,R
+Return

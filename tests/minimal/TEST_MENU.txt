@@ -1,0 +1,6 @@
+Lbl 1
+ClrText
+Menu "TEST",1,"EXIT",9
+Goto 1
+Lbl 9
+Return
