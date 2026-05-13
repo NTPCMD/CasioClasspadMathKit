@@ -1,0 +1,5 @@
+' UTILITY TEMPLATE (FX-CP400)
+ClrText
+Locate 1,1,"RUN UTIL"
+Pause
+Return

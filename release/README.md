@@ -1,3 +1,7 @@
-# release/
+# Release Structure
 
-Versioned release bundles for distributable FX-CP400 export packages and release notes.
+- `manifests/manifest_v*.md`: release inventory.
+- `checklists/`: go/no-go release controls.
+
+Versioning: `vMAJOR.MINOR.PATCH`.
+Rollback: restore previous `.g1m` plus matching manifest.

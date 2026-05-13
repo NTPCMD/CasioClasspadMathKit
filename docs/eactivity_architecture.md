@@ -1,34 +1,24 @@
-# eActivity Integration Architecture
+# eActivity Integration Architecture (FX-CP400)
 
-## Role of eActivity in MathKit
+## Goals
+- Launch toolkit programs from eActivity pages.
+- Provide formula references and worked examples.
+- Keep exam-time navigation to 2-3 taps.
 
-eActivity is a secondary delivery layer for guided lessons, not the primary runtime shell.
-The runtime toolkit still starts from `MN_MAIN` and modular `Prog` calls.
+## Proposed structure
+1. **Home eActivity page**
+   - Topic index (Algebra, Trig, Stats, Finance, Geometry).
+   - Quick links to run `MN_MAIN` or direct module menus.
+2. **Formula sheets**
+   - Static text/math boxes only (no heavy dynamic objects).
+3. **Worked examples**
+   - Step blocks with matching program launch hints.
+4. **Interactive strips**
+   - Input instruction + launch command mapping.
+5. **Exam quick-access page**
+   - Minimal text and highest-frequency tool links.
 
-## Planned eActivity structure
-
-### 1. Launch page
-- Brief instructions
-- Quick links to core modules
-- `Prog "MN_MAIN"` launch entry where supported
-
-### 2. Formula sheet pages
-- One page per module
-- Static formulas and symbol legend
-- References to matching toolkit program names
-
-### 3. Interactive example pages
-- Step-by-step worked examples
-- Prompt students to run a linked program
-- Record expected calculator output next to the example
-
-### 4. Quick navigation page
-- Short list of common exam tools
-- Direct links to high-frequency programs (quadratic, pythagorean, mean, compound interest)
-
-## Integration constraints
-
-- Keep program names stable and <=8 chars.
-- Do not duplicate business logic inside eActivity.
-- eActivity pages should call modular programs rather than reimplement them.
-- Treat eActivity files as release artifacts stored alongside `.xcp` exports.
+## Compatibility guidance
+- Keep program names stable; eActivity links depend on exact names.
+- Avoid Unicode-heavy labels unless verified in target firmware.
+- Version eActivity assets together with release manifest.

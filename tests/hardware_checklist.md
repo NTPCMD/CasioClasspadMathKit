@@ -1,33 +1,14 @@
-# FX-CP400 Hardware Deployment Checklist
+# FX-CP400 Hardware Checklist
 
-## Before import
-
-- [ ] Commit all source changes to Git.
-- [ ] Copy current validated `.xcp` exports into `backups/` with date/version suffix.
-- [ ] Confirm every program name is 8 chars or fewer.
-- [ ] Confirm every `Prog` target exists.
-- [ ] Run parser tests in ClassPad Manager editor.
-- [ ] Run runtime tests in emulator.
-
-## Import package preparation
-
-- [ ] Export fresh `.xcp` package from ClassPad Manager.
-- [ ] Copy the exported package into `release/`.
-- [ ] Copy the exact transfer-ready artifact into `calculator_import/`.
-- [ ] Keep previous known-good export unchanged for rollback.
-
-## Hardware import
-
-- [ ] Connect FX-CP400 over USB.
-- [ ] Enter USB storage mode on calculator.
-- [ ] Copy the validated package to the calculator import location required by ClassPad Manager workflow.
-- [ ] Eject storage safely.
-- [ ] Import/open package on calculator.
-
-## After import
-
-- [ ] Run `RFMENU`.
-- [ ] Run `MN_MAIN`.
-- [ ] Verify UTF symbol rendering.
-- [ ] Verify exit/return paths.
-- [ ] Archive the validated package as a hardware-approved backup.
+- [ ] Import `tests/minimal/HELLO.txt` and execute.
+- [ ] Import `tests/minimal/TEST_MENU.txt`; verify menu render and exit.
+- [ ] Import `tests/minimal/TEST_INPUT.txt`; verify numeric input parsing.
+- [ ] Import `tests/minimal/TEST_OUTPUT.txt`; verify `Locate` numeric output.
+- [ ] Import `tests/minimal/TEST_VALID.txt`; verify branch + `Return`.
+- [ ] Run `Prog` chain from `MN_MAIN` to one module and back.
+- [ ] Verify `ClrText` behavior in all menu transitions.
+- [ ] Verify `Goto`/`Lbl` loop stability (no freeze).
+- [ ] Power-cycle calculator and verify variable persistence policy.
+- [ ] UTF probe: `π` and `√` source imports + execution output.
+- [ ] Memory test: progressively larger program import until warning.
+- [ ] eActivity launch path from page link to target program.

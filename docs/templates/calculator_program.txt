@@ -1,0 +1,9 @@
+' CALCULATOR TEMPLATE (FX-CP400)
+ClrText
+Input "A?",A
+Input "B?",B
+A+B→R
+Locate 1,1,"R="
+Locate 3,1,R
+Pause
+Return

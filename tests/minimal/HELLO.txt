@@ -1,0 +1,3 @@
+ClrText
+Locate 1,1,"HELLO FX-CP400"
+Return

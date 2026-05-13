@@ -1,0 +1,12 @@
+' MENU TEMPLATE (FX-CP400)
+Lbl 1
+ClrText
+Menu "TITLE",1,"ITEM2",2,"EXIT",9
+Lbl 1
+Prog "TARGET1"
+Goto 1
+Lbl 2
+Prog "TARGET2"
+Goto 1
+Lbl 9
+Return

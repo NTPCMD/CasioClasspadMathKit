@@ -1,3 +1,9 @@
-# calculator_import/
+# Calculator Import Bundle
 
-Holds the latest transfer-ready FX-CP400 artifacts plus canonical minimal reference source files used for emulator and hardware smoke testing.
+## Folders
+- `minimal_sources/`: parser-safe smoke programs.
+- `bundles/`: import-ready packaged payloads (`.g1m`).
+- `backups/`: pre-deploy calculator snapshots.
+
+## Deployment
+Follow `docs/import_workflow.md`.
