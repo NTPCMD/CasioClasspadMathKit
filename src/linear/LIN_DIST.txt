@@ -1,0 +1,20 @@
+'================================
+' PROGRAM: LIN_DIST
+' PURPOSE: Distance between two points
+'================================
+
+"LINEAR DIST"→TITLE
+Prog "CFORMAT"
+
+Input "X1?",X1
+Input "Y1?",Y1
+Input "X2?",X2
+Input "Y2?",Y2
+
+√((X2-X1)^2+(Y2-Y1)^2)→RESVAL
+"DIST="→RESLBL
+1→RESMODE
+Prog "CRESULT"
+
+Pause
+Return

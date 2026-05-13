@@ -1,0 +1,35 @@
+'================================
+' PROGRAM: ALG_QUAD
+' PURPOSE: Quadratic roots
+'================================
+
+"ALG QUAD"→TITLE
+Prog "CFORMAT"
+
+Input "A?",QA
+Input "B?",QB
+Input "C?",QC
+
+6→VALMODE
+Prog "CVALID"
+If VALID=0 Then
+ Return
+IfEnd
+
+QB^2-4*QA*QC→D
+7→VALMODE
+Prog "CVALID"
+If VALID=0 Then
+ Return
+IfEnd
+
+(-QB+√D)/(2*QA)→R1
+(-QB-√D)/(2*QA)→R2
+
+Locate 1,6,"R1="
+Locate 4,6,R1
+Locate 1,7,"R2="
+Locate 4,7,R2
+
+Pause
+Return

@@ -1,0 +1,21 @@
+'================================
+' PROGRAM: MN_TRI
+' PURPOSE: Trig menu
+'================================
+
+Lbl 1
+Menu "TRIG",
+"SOH",A,
+"PYTHAG",B,
+"BACK",Z
+
+Lbl A
+Prog "TRI_SOH"
+Goto 1
+
+Lbl B
+Prog "TRI_PYTH"
+Goto 1
+
+Lbl Z
+Return

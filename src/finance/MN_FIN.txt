@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_FIN
+' PURPOSE: Finance module menu
+'================================
+
+Lbl 1
+Menu "FINANCE",
+"COMPOUND",A,
+"BACK",Z
+
+Lbl A
+Prog "FIN_COMP"
+Goto 1
+
+Lbl Z
+Return

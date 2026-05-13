@@ -1,0 +1,26 @@
+'================================
+' PROGRAM: MN_LIN
+' PURPOSE: Linear module menu
+'================================
+
+Lbl 1
+Menu "LINEAR",
+"GRADIENT",A,
+"MIDPOINT",B,
+"DISTANCE",C,
+"BACK",Z
+
+Lbl A
+Prog "LIN_GRAD"
+Goto 1
+
+Lbl B
+Prog "LIN_MID"
+Goto 1
+
+Lbl C
+Prog "LIN_DIST"
+Goto 1
+
+Lbl Z
+Return

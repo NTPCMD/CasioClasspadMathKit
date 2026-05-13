@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_GEO
+' PURPOSE: Geometry module menu
+'================================
+
+Lbl 1
+Menu "GEOMETRY",
+"PYTHAG",A,
+"BACK",Z
+
+Lbl A
+Prog "TRI_PYTH"
+Goto 1
+
+Lbl Z
+Return

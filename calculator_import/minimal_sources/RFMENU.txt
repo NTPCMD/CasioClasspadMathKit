@@ -1,0 +1,26 @@
+Lbl 1
+Menu "REF MENU",
+"HELLO",A,
+"INPUT",B,
+"RESULT",C,
+"VALIDATE",D,
+"EXIT",Z
+
+Lbl A
+Prog "RFHELLO"
+Goto 1
+
+Lbl B
+Prog "RFINPUT"
+Goto 1
+
+Lbl C
+Prog "RFRES"
+Goto 1
+
+Lbl D
+Prog "RFVALID"
+Goto 1
+
+Lbl Z
+Return

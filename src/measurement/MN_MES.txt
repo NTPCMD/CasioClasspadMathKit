@@ -1,0 +1,16 @@
+'================================
+' PROGRAM: MN_MES
+' PURPOSE: Measurement menu
+'================================
+
+Lbl 1
+Menu "MEASURE",
+"CIRCLE AREA",A,
+"BACK",Z
+
+Lbl A
+Prog "MES_CAR"
+Goto 1
+
+Lbl Z
+Return

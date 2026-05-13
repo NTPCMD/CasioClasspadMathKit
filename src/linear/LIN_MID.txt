@@ -1,0 +1,28 @@
+'================================
+' PROGRAM: LIN_MID
+' PURPOSE: Midpoint between two points
+'================================
+
+"LINEAR MID"→TITLE
+Prog "CFORMAT"
+
+Input "X1?",X1
+Input "Y1?",Y1
+Input "X2?",X2
+Input "Y2?",Y2
+
+(X1+X2)/2→MX
+(Y1+Y2)/2→MY
+
+"MID X="→RESLBL
+MX→RESVAL
+1→RESMODE
+Prog "CRESULT"
+
+"MID Y="→RESLBL
+MY→RESVAL
+1→RESMODE
+Prog "CRESULT"
+
+Pause
+Return

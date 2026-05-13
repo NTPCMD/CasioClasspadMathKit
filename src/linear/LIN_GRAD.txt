@@ -1,0 +1,28 @@
+'================================
+' PROGRAM: LIN_GRAD
+' PURPOSE: Gradient between two points
+'================================
+
+"LINEAR GRAD"→TITLE
+Prog "CFORMAT"
+
+Input "X1?",X1
+Input "Y1?",Y1
+Input "X2?",X2
+Input "Y2?",Y2
+
+X2-X1→DX
+DX→DEN
+1→VALMODE
+Prog "CVALID"
+If VALID=0 Then
+ Return
+IfEnd
+
+(Y2-Y1)/DEN→RESVAL
+"GRAD="→RESLBL
+1→RESMODE
+Prog "CRESULT"
+
+Pause
+Return

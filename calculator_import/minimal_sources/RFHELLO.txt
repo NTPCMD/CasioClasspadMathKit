@@ -1,0 +1,4 @@
+ClrText
+Locate 1,1,"HELLO"
+Pause
+Return

@@ -1,0 +1,10 @@
+ClrText
+Input "X?",X
+If X<=0 Then
+ Locate 1,2,"INVALID"
+ Pause
+ Return
+IfEnd
+Locate 1,2,"VALID"
+Pause
+Return

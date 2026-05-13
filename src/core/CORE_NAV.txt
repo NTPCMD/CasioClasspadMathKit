@@ -1,0 +1,20 @@
+'================================
+' PROGRAM: CORE_NAV
+' PURPOSE: Shared menu navigation
+'================================
+
+Menu "MATHKIT",
+"ALGEBRA",A,
+"TRIG",B,
+"BACK",Z
+
+Lbl A
+Prog "MN_ALG"
+Return
+
+Lbl B
+Prog "MN_TRI"
+Return
+
+Lbl Z
+Return
